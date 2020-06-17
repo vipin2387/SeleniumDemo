@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteDemo">
+
+	<listeners>
+		<listener class-name="pageObjectModel.ListenerWithReports"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Group1">
+		<classes>
+			<class name="pageObjectModel.VerifyLogin_PgFactory" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Group2">
+		<classes>
+			<class name="data.driven.test.readExcelTestNG" />
+			<class name="data.driven.test.readWriteExcelLoopDemo" />
+			<class name="data.driven.test.readExcelDemo2" />
+			<class name="data.driven.test.readWriteExcelDemo" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- SuiteDemo -->
