@@ -1,0 +1,85 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9774834000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the login page",
+            "match": {
+              "location": "Stepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "user can do the successful login",
+        "description": "",
+        "id": "login;user-can-do-the-successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2389663600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user provides the correct credentials",
+            "match": {
+              "location": "Stepdefs.user_provides_the_correct_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2089375100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user rendered to TestMeApp home page",
+            "match": {
+              "location": "Stepdefs.user_rendered_to_TestMeApp_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "In order to login in TestMe App\nAs a user\nI need to register first\n\nBusiness rules:\n - Ony registered users can do the login\n - user should provide all the necessary details on registration page\n \nTo Do:\n -  password should have more than 8 characters ",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "skeleton/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
