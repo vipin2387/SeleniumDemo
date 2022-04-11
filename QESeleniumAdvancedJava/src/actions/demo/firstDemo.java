@@ -13,7 +13,7 @@ public class firstDemo {
 	public static void main(String[] args) {
 
 		WebDriver driver = setupDriver.createDriver();
-		driver.get("https://lkmdemoaut.accenture.com/TestMeApp/login.htm");
+		driver.get("https://TestMeApp/login.htm");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.name("userName")).sendKeys("Lalitha");
 		driver.findElement(By.name("password")).sendKeys("Password123");
